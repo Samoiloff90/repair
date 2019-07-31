@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light' , sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -69,19 +86,24 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 13px;
 }
 
 .navbar__button {
   margin-left: 30px;
+  font-size: 13px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .navbar__phone {
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
   text-decoration: none;
   margin-top: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -119,18 +141,20 @@ img {
   orphans: 140px;
 }
 
-.hero-text-title {
+.hero-text__title {
   font-size: 41px;
-  font-weight: 400;
   line-height: 55px;
   margin-bottom: 40px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
-.hero-text-subtitle {
+.hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-list {
@@ -167,6 +191,13 @@ img {
 
 .hero-list__text {
   min-width: 300px;
+  font-size: 14px;
+}
+
+.hero-image {
+  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+  margin-left: 15px;
 }
 
 @media (max-width: 1200px) {
