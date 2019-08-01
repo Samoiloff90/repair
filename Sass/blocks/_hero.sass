@@ -1,5 +1,6 @@
 .hero
   padding: 50px 0
+  background-color: $background-color
   &-block
     display: flex
   &-text
@@ -25,6 +26,7 @@
     &__image
       width: 40px
       height: 40px
+      min-width: 40px
       border: 2px solid $main-color
       display: flex
       align-items: center
@@ -32,11 +34,12 @@
       border-radius: 50%
       margin-right: 30px
     &__text
-      min-width: 300px
       font-size: 14px
   &-image
-    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
     margin-left: 15px
+    &__room
+      box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
+
 @media (max-width: 1200px)
   .hero
     &-block
