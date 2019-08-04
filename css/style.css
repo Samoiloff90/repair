@@ -64,7 +64,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 60px 0 92px;
 }
 
 .section-title {
@@ -74,8 +74,8 @@ img {
 }
 
 .section-subtitle {
-  font-size: 16px;
   display: block;
+  font-size: 16px;
 }
 
 .input {
@@ -175,7 +175,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  orphans: 140px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -304,14 +304,16 @@ img {
 }
 
 .offer__title {
-  min-width: 360px;
+  max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .offer__subtitle {
-  min-width: 250px;
+  max-width: 250px;
   margin-bottom: 30px;
+  font-family: 'Museo Sans Light' , sans-serif;
+  font-weight: 300;
 }
 
 .offer__input {
@@ -326,11 +328,61 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 31px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer__button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information__time {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 70px;
+  line-height: 24px;
+  max-width: 47%;
+}
+
+.information__or {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.information__or-call {
+  line-height: 24px;
+}
+
+.information__or-phone {
+  display: inline-block;
+  margin: 0;
+  color: #333333;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
   .offer {
-    background: #ffffff;
+    background-size: cover;
   }
   .offer__input {
     width: 100%;
@@ -338,6 +390,14 @@ img {
   }
   .offer__button {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #ffffff;
+    width: 100%;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

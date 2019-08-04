@@ -16,12 +16,13 @@
     padding-right: 90px
     position: relative
   &__title
-    min-width: 360px
+    max-width: 360px
     line-height: 35px
-    margin-bottom: 24px
+    margin-bottom: 21px
   &__subtitle
-    min-width: 250px
+    max-width: 250px
     margin-bottom: 30px
+    +reg
   &__input
     margin-bottom: 30px
     width: 240px
@@ -30,11 +31,49 @@
   &__button
     width: 100%
     min-height: 70px
+    margin-bottom: 31px
+    border: none
+    outline: none
+    cursor: pointer
+    +bold
+    &:hover
+      background-color: lighten($main-color, 10%)
+      cursor: pointer
+      border: none
+      outline: none
+.information
+  display: flex
+  justify-content: space-between
+  &__time
+    display: inline-block
+    font-size: 15px
+    margin-right: 70px
+    line-height: 24px
+    max-width: 47%
+  &__or
+    display: inline-block
+    font-size: 15px
+    &-call
+      line-height: 24px
+    &-phone
+      display: inline-block
+      margin: 0
+      color: $text-color
+      font-size: 15px
+      text-decoration: none
+      margin-top: 10px
+      +bold
 @media (max-width: 1200px)
   .offer
-    background: #ffffff
+    background-size: cover
     &__input
       width: 100%
       margin-bottom: 10px
     &__button
       font-size: 13px
+@media (max-width: 768px)
+  .offer
+    background: #ffffff
+    &__block
+    width: 100%
+    padding-right: 0
