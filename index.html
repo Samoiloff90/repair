@@ -26,7 +26,7 @@
             </a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button">
+          <button class="button navbar__button" id="button">
             Перезвоните мне
           </button>
         </div>
@@ -100,7 +100,7 @@
           <form action="#" class="form offer__form">
             <input type="text" class="input offer__input" placeholder="Ваше имя">
             <input type="tell" class="input offer__input" placeholder="Ваш телефон">
-            <button class="button offer__button">
+            <button class="button offer__button" id="button">
               Получить бесплатный дизайн-проект
             </button>
           </form>
@@ -123,5 +123,19 @@
     </section>
     <!-- /.offer -->
   </main>
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">
+        &times;
+      </button>
+      <div class="modal-dialog__title">
+        Всплывающее окно
+      </div>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+<script src="js/main.js"></script>
+
 </body>
 </html>
