@@ -26,8 +26,12 @@
   &__input
     margin-bottom: 30px
     width: 240px
+    outline: 0
     &:first-child
       margin-right: 10px
+    &:focus
+      outline: 0
+
   &__button
     width: 100%
     min-height: 70px
@@ -66,17 +70,28 @@
 @media (max-width: 1200px)
   .offer
     background-size: cover
+    &__title
+      width: 100%
     &__input
       width: 100%
       margin-bottom: 10px
     &__button
-      font-size: 13px
+      font-size: 14px
   .information
     flex-direction: column
     min-width: 100%
+    &__or-call
+      display: block
 @media (max-width: 768px)
   .offer
     background: #ffffff
-    &__block
-    width: 100%
-    padding-right: 0
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      width: 100%
+    &__input
+      display: block
+@media (max-width: 390px)
+    &__title
+      font-size: 18px

@@ -319,10 +319,15 @@ img {
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+  outline: 0;
 }
 
 .offer__input:first-child {
   margin-right: 10px;
+}
+
+.offer__input:focus {
+  outline: 0;
 }
 
 .offer__button {
@@ -384,12 +389,15 @@ img {
   .offer {
     background-size: cover;
   }
+  .offer__title {
+    width: 100%;
+  }
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
   }
   .offer__button {
-    font-size: 13px;
+    font-size: 14px;
   }
   .information {
     -webkit-box-orient: vertical;
@@ -398,13 +406,30 @@ img {
             flex-direction: column;
     min-width: 100%;
   }
+  .information__or-call {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
+  }
+  .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__title {
+    width: 100%;
+  }
+  .offer__input {
+    display: block;
+  }
+}
+
+@media (max-width: 390px) {
+  __title {
+    font-size: 18px;
   }
 }
 
