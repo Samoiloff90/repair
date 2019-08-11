@@ -1,7 +1,7 @@
 // Обработка и отправка формы через Ajax
 $('#offer-form').on('submit' , function(event) {
   event.preventDefault();
-  $.Ajax({
+  $.ajax({
     url: 'mail.php',
     type: 'POST',
     data: $(this).serialize(),
