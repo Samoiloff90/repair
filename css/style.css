@@ -577,6 +577,13 @@ input {
 
 @media (max-width: 1200px) {
   .portfolio__title {
+    max-width: 500px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio__title {
     font-size: 18px;
     max-width: 500px;
   }
@@ -623,6 +630,7 @@ input {
 .card__title {
   margin-top: 0;
   font-size: 18px;
+  margin-bottom: 27px;
 }
 
 .card__image {
