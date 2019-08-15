@@ -8,7 +8,7 @@ $(document).ready(function() {
     modal.addClass('modal_active');
   });
 
-  cardLink.on('click', function (event) {
+  cardlink.on('click', function (event) {
     event.preventDefault();
     modal.addClass('modal_active');
     var target = $(this).attr('data-target');
