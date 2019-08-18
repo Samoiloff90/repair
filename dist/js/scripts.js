@@ -38,3 +38,66 @@ $(document).ready(function () {
     ]
   });
 });
+
+ // Валидация формы
+      $('#brif-form').validate({
+        rules: {
+          username:{
+            required: true,
+            minlenght: 2,
+            maxlength: 15
+          },
+          phone: {
+            required: true
+          },
+          email:{
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          username: "Заполните поле",
+          email: "Заполните поле",
+          phone: "Заполните поле"
+        }
+      });
+      $('#offer-form').validate({
+        rules: {
+          username: "required",
+          phone: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          username: "Заполните поле",
+          email: "Заполните поле",
+          phone: "Заполните поле"
+        }
+      });
+      $('#form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlenght: 2,
+            maxlength: 15
+          },
+          phone: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          username: "Заполните поле",
+          email: "Заполните поле",
+          phone: "Заполните поле"
+        }
+      });
+      // Маска для телефона
+      $('.phone').mask('8 (999) 999-99-99');

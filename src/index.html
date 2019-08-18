@@ -414,9 +414,9 @@
   </main>
   <footer class="footer">
     <div class="map" id="map">
-      <script async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A664439f7a1727fbe1f761c64c27f672666412052ebdee2715b989bab7e660d20&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
-      </script>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.455874189179!2d37.199103315956975!3d55.611483010349865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556d92c52e921%3A0x7069f1a444f51ab2!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMCwg0KLQvtC70YHRgtC-0L_QsNC70YzRhtC10LLQviwg0JzQvtGB0LrQstCwLCAxNDMzNTA!5e0!3m2!1sru!2sru!4v1566134300922!5m2!1sru!2sru"
+        width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="container">
       <div class="contacts-block">
@@ -490,41 +490,10 @@
   <!-- <script src="js/main.js"></script> -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/wow.min.js"></script>
-  <script src="js/scripts.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Валидация формы
-      $('#brif-form, #offer-form, #form,').validate({
-        rules: {
-          username: {
-            required: true,
-            minlenght: 2,
-            maxlength: 15
-          },
-          phone: {
-            required: true
-          },
-          email: {
-            required: true,
-            email: true
-          }
-        },
-        messages: {
-          username: "Заполните поле",
-          phone: "Заполните поле",
-          required: "Заполните поле"
-        },
-          email: {
-            required: "Заполните поле"
-          } 
-        },
-    });
-      // Маска для телефона
-      $('.phone').mask('8 (999) 999-99-99');
-  </script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
