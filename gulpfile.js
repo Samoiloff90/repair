@@ -3,6 +3,12 @@ var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
 var tinyPNG = require('gulp-tinypng-compress');
 
+gulp.task('default', defaultTask);
+
+function defaultTask(done) {
+  done();
+}
+
 gulp.task('minify-css', function(done) {
   return gulp.src('./src/css/*.css')
   .pipe(cleanCSS({
@@ -20,14 +26,6 @@ gulp.task('move-js', function (done) {
   
 });
 
-gulp.task('htmlmin', function (done) {
-  return gulp.src('./src/*.html')
-    .pipe(gulp.dest('dist/js/'))
-  done();
-
-});
-
-var htmlmin = require('gulp-htmlmin');
 gulp.task('htmlmin', function (done) {
   return gulp.src('./src/*.html')
     .pipe(htmlmin({
@@ -52,7 +50,7 @@ gulp.task('tinypng', function (done) {
     done();
 });
 
-gulp.task('default', gulp.parallel('minify-css', 'move-js', 'fonts', 'htmlmini', 'tinypng', function (done) {
+gulp.task('default', gulp.parallel('minify-css', 'move-js', 'fonts', 'htmlmin', 'tinypng', function (done) {
   // do more stuff
   done();
 }));
