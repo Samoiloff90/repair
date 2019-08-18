@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,UAAU,CAAV,aAAU;EACR,IAAI;IACF,SAAS,EAAE,oBAAoB;;EAGjC,EAAE;IACA,UAAU,EAAE,MAAM;IAClB,SAAS,EAAE,uBAAuB;;;;AAItC,AAAA,cAAc,CAAC;EACb,cAAc,EAAE,aAAa;CAC9B",
-    "sources": [
-        "../src/Sass/animate/sliding_exits/slideOutRight.scss"
-    ],
-    "names": [],
-    "file": "slideOutRight.css"
-}

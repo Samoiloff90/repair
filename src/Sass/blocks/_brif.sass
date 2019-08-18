@@ -133,7 +133,7 @@
   .brif
     background-image: url('../img/brif/brif-color.jpg'), url('../img/brif/brif-bg.jpg')
     background-position: top center, center bottom
-    background-size: 100% 46%, cover
+    background-size: 100% 40%, cover
     background-repeat: repeat-x, no-repeat
     padding-top: 20px
     &__input
@@ -167,3 +167,16 @@
         margin-bottom: 32px
       &__description
         font-size: 14px
+@media (max-width: 380px)
+  .brif
+    background-image: url('../img/brif/brif-color.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: top center, center bottom
+    background-size: 100% 44%, cover
+    background-repeat: repeat-x, no-repeat
+    padding-top: 20px
+    padding-bottom: 31px
+  .form
+    &__description
+      width: 50%
+      margin: auto
+      line-height: 24px

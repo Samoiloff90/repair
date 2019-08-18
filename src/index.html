@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon -->
+	<link rel="icon" href="img/favicon/Samoiloff.png" type="image/x-icon">
+  <link rel="img/favicon/Samoiloff.png" type="image/x-icon"> 
 </head>
 <body>
   <!-- Yandex.Metrika counter -->
@@ -119,7 +122,7 @@
           <!-- /.section-subtitle -->
           <form action="#" id="offer-form" class="form offer__form">
             <input type="text" name="username" required minlength="2" maxlength="15" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" required class="input offer__input" placeholder="Ваш телефон">
+            <input type="tel" name="phone" required class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button">
               Получить бесплатный дизайн-проект
             </button>
@@ -414,9 +417,9 @@
   </main>
   <footer class="footer">
     <div class="map" id="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.455874189179!2d37.199103315956975!3d55.611483010349865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556d92c52e921%3A0x7069f1a444f51ab2!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMCwg0KLQvtC70YHRgtC-0L_QsNC70YzRhtC10LLQviwg0JzQvtGB0LrQstCwLCAxNDMzNTA!5e0!3m2!1sru!2sru!4v1566134300922!5m2!1sru!2sru"
-        width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.455874189179!2d37.199103315956975!3d55.611483010349865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556d92c52e921%3A0x7069f1a444f51ab2!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMCwg0KLQvtC70YHRgtC-0L_QsNC70YzRhtC10LLQviwg0JzQvtGB0LrQstCwLCAxNDMzNTA!5e0!3m2!1sru!2sru!4v1566134300922!5m2!1sru!2sru" class="map__map"
+        allowfullscreen></iframe>
     </div>
     <div class="container">
       <div class="contacts-block">
@@ -463,20 +466,26 @@
       </button>
       <div class="modal-column">
         <div class="modal-content">
-          <h2 class="section-title offer__title">
-            Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+          <h2 class="section-title modal__title">
+            Узнайте точную стоимость ремонта по телефону!
           </h2>
           <!-- /.section-title -->
-          <span class="section-subtitle offer__subtitle">
-            Оставьте заявку на разработку бесплатного дизайн-проекта!
+          <span class="section-subtitle modal__subtitle">
+            Заполните поля ниже - мы свяжемся с Вами
           </span>
           <!-- /.section-subtitle -->
-          <form action="#" id="form" class="form offer__form">
+          <form action="#" id="form" class="form modal__form">
             <input type="text" name="username" required minlength="2" maxlength="15" class="input offer__input modal__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" required class="input offer__input modal__input" placeholder="Ваш телефон">
-            <button class="button offer__button">
-              Получить бесплатный дизайн-проект
+            <input type="tel" name="phone" required class="input offer__input modal__input phone" placeholder="Ваш телефон">
+            <button class="button modal__button">
+              Узнать стоимость
             </button>
+            <span class="modal__call">
+              Или Вы можете перезвонить нам сами по телефону:
+            </span>
+            <a href="tel:+7(8182)42-51-31" class="modal__phone">
+              +7 (8182) 42-51-31
+            </a>
           </form>
         </div>
       </div>

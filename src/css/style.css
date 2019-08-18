@@ -1095,6 +1095,50 @@ input {
   display: none;
 }
 
+.modal__title {
+  margin-bottom: 50px;
+}
+
+.modal__subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.modal__button {
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 31px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.modal__button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.modal__call {
+  display: block;
+  text-align: center;
+}
+
+.modal__phone {
+  display: block;
+  margin: 0;
+  color: #333333;
+  font-size: 24px;
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 .modal__input {
   width: 100%;
 }
@@ -1116,9 +1160,15 @@ input {
 }
 
 .modal-dialog__close {
+  background-color: #ffd200;
   position: absolute;
   top: 0;
   right: 0;
+  border: none;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
 }
 
 .portfolio {
@@ -1165,9 +1215,17 @@ input {
 }
 
 @media (max-width: 768px) {
+  .portfolio {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
   .portfolio__title {
     font-size: 18px;
-    max-width: 500px;
+    width: 280px;
+    margin-bottom: 40px;
+  }
+  .portfolio__arrows {
+    margin-top: 23px;
   }
 }
 
@@ -1628,7 +1686,7 @@ input {
   .brif {
     background-image: url("../img/brif/brif-color.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 46%, cover;
+    background-size: 100% 40%, cover;
     background-repeat: repeat-x, no-repeat;
     padding-top: 20px;
   }
@@ -1678,6 +1736,22 @@ input {
   }
 }
 
+@media (max-width: 380px) {
+  .brif {
+    background-image: url("../img/brif/brif-color.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 44%, cover;
+    background-repeat: repeat-x, no-repeat;
+    padding-top: 20px;
+    padding-bottom: 31px;
+  }
+  .form__description {
+    width: 50%;
+    margin: auto;
+    line-height: 24px;
+  }
+}
+
 .footer {
   position: relative;
 }
@@ -1687,6 +1761,13 @@ input {
   left: 0;
   top: 0;
   width: 50%;
+}
+
+.map__map {
+  width: 100%;
+  height: 650px;
+  frameborder: 0;
+  border: 0;
 }
 
 .contacts {
@@ -1832,6 +1913,9 @@ input {
   }
   .contacts-list__item {
     width: 70%;
+  }
+  .contacts-list__icon {
+    margin-right: 15px;
   }
   .contacts-list__icon-one {
     min-width: 14px;

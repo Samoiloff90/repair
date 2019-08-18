@@ -9,6 +9,36 @@ input
   background-color: rgba(#000000, 0.5)
   display: flex
   display: none
+  &__title
+    margin-bottom: 50px
+  &__subtitle
+    text-align: center
+    margin-bottom: 50px
+  &__button
+    width: 100%
+    min-height: 70px
+    margin-bottom: 31px
+    border: none
+    outline: none
+    cursor: pointer
+    +bold
+    &:hover
+      background-color: lighten($main-color, 10%)
+      cursor: pointer
+      border: none
+      outline: none
+  &__call
+    display: block
+    text-align: center
+  &__phone
+      display: block
+      margin: 0
+      color: $text-color
+      font-size: 24px
+      text-decoration: none
+      margin-top: 10px
+      text-align: center
+      +bold
   &__input
     width: 100%
   &_active
@@ -21,7 +51,14 @@ input
     min-width: 200px
     background-color: #fff
     padding: 40px
+  &-dialog      
     &__close
+      background-color: $main-color
       position: absolute
       top: 0
       right: 0
+      border: none
+      &:hover
+        cursor: pointer
+
+
