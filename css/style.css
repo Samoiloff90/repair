@@ -347,6 +347,7 @@ template {
   src: url("../fonts/MuseSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -355,6 +356,7 @@ template {
   src: url("../fonts/MuseSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 * {

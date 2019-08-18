@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
+  <script>
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () {
         (m[i].a = m[i].a || []).push(arguments)
@@ -23,11 +25,10 @@
       webvisor: true,
       trackHash: true
     });
-  </script> <noscript>
+  </script>
+  <noscript>
     <div><img src="https://mc.yandex.ru/watch/54919576" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript> <!-- /Yandex.Metrika counter -->
-</head>
-<body>
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -413,7 +414,7 @@
   </main>
   <footer class="footer">
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async
+      <script async
         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A664439f7a1727fbe1f761c64c27f672666412052ebdee2715b989bab7e660d20&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
       </script>
     </div>
@@ -470,7 +471,7 @@
             Оставьте заявку на разработку бесплатного дизайн-проекта!
           </span>
           <!-- /.section-subtitle -->
-          <form action="#" id="offer-form" class="form offer__form">
+          <form action="#" id="form" class="form offer__form">
             <input type="text" name="username" required minlength="2" maxlength="15" class="input offer__input modal__input" placeholder="Ваше имя">
             <input type="tel" name="phone" required class="input offer__input modal__input" placeholder="Ваш телефон">
             <button class="button offer__button">
@@ -486,8 +487,8 @@
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->
-<!-- <script src="js/main.js"></script> -->
-<script src="js/jquery-3.4.1.min.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/modal.js"></script>
@@ -497,7 +498,7 @@
   <script>
     $(document).ready(function() {
       // Валидация формы
-      $('#brif-form, #offer-form,').validate({
+      $('#brif-form, #offer-form, #form,').validate({
         rules: {
           username: {
             required: true,
