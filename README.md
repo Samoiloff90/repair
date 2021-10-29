@@ -12,7 +12,7 @@
 
 <details>
   <summary>Скриншот</summary>
-  ![flat](https://user-images.githubusercontent.com/50422809/139385972-6de2d467-cbb2-4c9d-b4fb-c6eb63824048.png)
+  <img src="![flat](https://user-images.githubusercontent.com/50422809/139385972-6de2d467-cbb2-4c9d-b4fb-c6eb63824048.png)" alt="Скриншот">
 </details>
 
 
