@@ -1,7 +1,7 @@
 ## Одностраничный сайт по ремонту квартир
 
 
-Используемые технологии:
+### Используемые технологии:
 * HTML5
 * SASS
 * JS
@@ -10,9 +10,7 @@
 
 ![repair](https://user-images.githubusercontent.com/50422809/139387064-b0f441fc-12e1-463d-b62f-0f58f762474d.gif)
 
-<details>
-  <summary>Скриншот</summary>
-  <div>![flat](https://user-images.githubusercontent.com/50422809/139385972-6de2d467-cbb2-4c9d-b4fb-c6eb63824048.png)</div>
-</details>
+### Скриншот
+![flat](https://user-images.githubusercontent.com/50422809/139385972-6de2d467-cbb2-4c9d-b4fb-c6eb63824048.png)
 
 
